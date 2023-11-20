@@ -4,7 +4,6 @@ import { DashboardComponent } from './dashboard.component';
 import { FormpagesModule } from './pages/formpages/formpages.module';
 import { UsersModule } from './pages/users/users.module';
 import { SharedModule } from '../shared/shared.module';
-import { TranslateModule } from '@ngx-translate/core'
 import { HomeModule } from './pages/home/home.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
@@ -15,6 +14,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
+    
     DashboardComponent,
     ToolbarComponent,
     SidebarComponent,
@@ -24,7 +24,6 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     FormpagesModule,
     UsersModule,
     SharedModule,
-    TranslateModule,
     HomeModule,
     
     
