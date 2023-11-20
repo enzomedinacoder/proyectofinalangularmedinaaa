@@ -1,0 +1,40 @@
+<mat-drawer-container class="example-container" autosize>
+<!-- sidebar -->
+<mat-drawer 
+style="width:200px "
+[opened]="showSidebar" 
+#drawer 
+class="example-sidenav" 
+mode="side">
+
+<app-sidebar></app-sidebar>
+
+</mat-drawer>
+<!-- Contenido -->
+    <div class="example-sidenav-content">
+        <!-- toolbar -->
+        <app-toolbar (toggleSidebar)="showSidebar=!showSidebar"></app-toolbar>
+        
+        <!-- Pagina -->
+        <main style="padding:1rem ">
+            <h1 fontWeight="bold" appHeadline>Usuarios</h1>
+            
+        <!-- <app-formpages></app-formpages> -->
+        <app-users></app-users>
+        <!-- <button (click)="showHome=!showHome">Mostrar Home</button> -->
+        <!-- <app-home *ngIf="showHome"></app-home> -->
+
+        </main>
+        
+
+    </div>
+    <!-- contenido -->
+
+
+
+
+
+
+</mat-drawer-container>
+
+
