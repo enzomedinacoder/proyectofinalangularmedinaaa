@@ -6,6 +6,7 @@ import { HomeComponent } from './dashboard/pages/home/home.component';
 import { UsersComponent } from './dashboard/pages/users/users.component';
 import { UserDetailComponent } from './dashboard/pages/users/components/user-detail/user-detail.component';
 import { CoursesComponent } from './dashboard/pages/courses/courses.component';
+import { CourseDetailComponent } from './dashboard/pages/courses/components/course-detail/course-detail.component';
 
 const routes: Routes = [
 
@@ -16,6 +17,10 @@ const routes: Routes = [
     {
       path:'home',
       component:HomeComponent
+    },
+    {
+      path: 'courses/:id',
+      component: CourseDetailComponent,
     },
     {
       path:'courses',

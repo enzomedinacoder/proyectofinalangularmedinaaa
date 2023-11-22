@@ -15,6 +15,7 @@ import { FormErrorsPipe } from './pipes/form-errors.pipe';
 import {MatSelectModule} from '@angular/material/select';
 import {MatListModule} from '@angular/material/list';
 import { HeadlineDirective } from './directives/headline.directive';
+import { MatDatepickerModule } from '@angular/material/datepicker';
 
 
 
@@ -48,6 +49,7 @@ import { HeadlineDirective } from './directives/headline.directive';
     MatSelectModule,
     MatListModule,
     HeadlineDirective,
+    MatDatepickerModule
   
     
   ]
