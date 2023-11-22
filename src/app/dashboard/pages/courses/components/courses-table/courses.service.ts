@@ -10,7 +10,6 @@ import { Observable, of } from "rxjs";
 export class CoursesService{
 
     courses:Course[]=[
-
         {
             id:1,
             name:'Javascript',
@@ -19,15 +18,30 @@ export class CoursesService{
         },
         
         {
-            id:1,
+            id:2,
             name:'Angular',
             endDate:new Date(),
             startDate: new Date()
         }
     ]
 
-    getCourses():Observable<Course[]>{
+    getCourses$():Observable<Course[]>{
         return of(this.courses)
     }
+
+    createCourse$(payload:Course):Observable<Course[]>{
+        this.courses.push(payload)
+        console.log(this.courses)
+        return of([...this.courses])
+
+    }
+    editCourse$(id:number,payload:Course):Observable<Course[]>{
+        this.courses.push(payload)
+        return of(this.courses.map((c)=>c.id===id?{...c,...payload}:c))
+
+    }
+    
+
+
 
 }

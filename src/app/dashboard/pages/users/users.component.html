@@ -5,10 +5,8 @@
     Crear Usuario
 </button>
 
-<!-- {{testUser|fullname: 'uppercase'}} -->
 
 <app-users-table 
-
 [dataSource]="users" 
 (editUser)="onEditUser($event)"
 (deleteUser)="onDeleteUser($event)">

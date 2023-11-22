@@ -15,7 +15,6 @@ export class UsersService {
 
   
   getUsers():User[]{
-
     return[
       { id:1,
         name:'Rocio',

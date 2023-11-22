@@ -47,7 +47,7 @@ import { HeadlineDirective } from './directives/headline.directive';
     FormErrorsPipe,
     MatSelectModule,
     MatListModule,
-    HeadlineDirective
+    HeadlineDirective,
   
     
   ]

@@ -34,7 +34,6 @@ constructor(private matDialog:MatDialog,
             ...this.users,
             { ...v,
               id:new Date().getTime(),
-
             }
           ]
         }
