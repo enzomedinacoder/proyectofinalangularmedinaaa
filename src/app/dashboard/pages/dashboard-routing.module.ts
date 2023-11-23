@@ -13,6 +13,7 @@ import { UsersTableComponent } from "./users/components/users-table/users-table.
         RouterModule.forChild([
             {
                 path:'',
+                
                 component:DashboardComponent,
                 children:[
                     {

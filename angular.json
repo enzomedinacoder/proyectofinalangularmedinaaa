@@ -49,9 +49,14 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
-                }
+                } 
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "fileReplacements": [
+              {
+                "replace": "src/environments/environment.local.ts",
+                "with": "src/environments/environment.prod.ts"
+              }]
             },
             "development": {
               "buildOptimizer": false,

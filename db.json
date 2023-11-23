@@ -1,0 +1,14 @@
+{
+"users": [
+    {
+    "name": "Enzo",
+    "lastName": "Medina",
+    "email": "enzo7322@gmail.com",
+    "password": "123456",
+    "token": "asdsadafw",
+    "role": "ADMIN",
+    "id": 1
+    }
+],
+"courses": []
+}

@@ -16,17 +16,6 @@ export class UsersService {
   
   getUsers():User[]{
     return[
-      { id:1,
-        name:'Rocio',
-        lastName:'Farias',
-        email:'farias@mail.com'
-      },
-      {
-        id:2,
-        name:'Luciana',
-        lastName:'Medina',
-        email:'medina@mail.com'
-      }
     ]
     
   }

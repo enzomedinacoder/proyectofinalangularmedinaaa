@@ -65,13 +65,6 @@ export class HomeComponent implements OnDestroy {
     const getUsersPromise= new Promise((resolve,reject)=>{
 
       const users:User[]=[
-
-        {
-          id:1,
-          name:'Gisele',
-          email:'giselemedina@',
-          lastName:'Medina',
-        },
       ];
 
       setInterval(()=>{
