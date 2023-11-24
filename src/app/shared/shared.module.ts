@@ -49,7 +49,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
     MatSelectModule,
     MatListModule,
     HeadlineDirective,
-    MatDatepickerModule
+    MatDatepickerModule,
   
     
   ]
