@@ -60,4 +60,6 @@ export class AuthService {
     this.router.navigate(['/auth/login'])
 
   }
+
+  
 }

@@ -1,12 +1,32 @@
+<div style="background-color:lightskyblue;">
+
+  <p>
+    {{(authUser$|async)?.name + '' +(authUser$|async)?.lastName}}
+    <br>
+    {{(authUser$|async)?.email}}
+  </p>
+</div>
 <mat-nav-list>
 
-<mat-list-item routerLink="home">
+<mat-list-item 
+routerLink="home"
+routerLinkActive 
+#homeLink="routerLinkActive"
+[activated]="homeLink.isActive">
   <a >Home</a>
 </mat-list-item>
-<mat-list-item routerLink="users">
+<mat-list-item 
+routerLink="users"
+routerLinkActive 
+#usuariosLink="routerLinkActive"
+[activated]="usuariosLink.isActive">
   <a >Usuarios</a>
 </mat-list-item>
-<mat-list-item routerLink="courses">
+<mat-list-item 
+routerLink="courses"
+routerLinkActive 
+#coursesLink="routerLinkActive"
+[activated]="coursesLink.isActive">
   <a >Cursos</a>
 </mat-list-item>
 <mat-list-item>

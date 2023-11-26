@@ -1,14 +1,29 @@
 {
-"users": [
+  "users": [
     {
-    "name": "Enzo",
-    "lastName": "Medina",
-    "email": "enzo7322@gmail.com",
-    "password": "123456",
-    "token": "asdsadafw",
-    "role": "ADMIN",
-    "id": 1
+      "name": "Enzo",
+      "lastName": "Medina",
+      "email": "enzo7322@gmail.com",
+      "password": "123456",
+      "token": "asdsadafw",
+      "role": "ADMIN",
+      "id": 1
+    },
+    {
+      "name": "Luciana",
+      "lastName": "Medina",
+      "email": "luciana@gmail.com",
+      "password": "123456",
+      "token": "asdsadasdasdasdafw",
+      "role": "ADMIN",
+      "id": 2
+    },
+    {
+      "name": "sadasd",
+      "lastName": "editaasdsado",
+      "email": "sahgfddash@gmail.com",
+      "id": 3
     }
-],
-"courses": []
+  ],
+  "courses": []
 }
