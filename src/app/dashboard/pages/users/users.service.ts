@@ -23,12 +23,12 @@ export class UsersService {
     return this.httpClient.put<User>(`${environment.baseUrl}/users/${userId}`,payload).pipe(
       concatMap(()=>this.getUsers())
     )
+
   }
-  // deleteUser(userId:number,payload:User):Observable<User[]>{
-  //   return this.httpClient.delete<User>(`${environment.baseUrl}/users/${userId}`,payload).pipe(
-  //     concatMap(()=>this.getUsers())
-  //   )
-  // }
+  deleterUser(id:number):Observable<User[]>{
+    return this.httpClient.delete<Object>(`${environment.baseUrl}/users/${id}`).pipe(
+      concatMap(()=>this.getUsers()))
+  }
 
 
 

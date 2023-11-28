@@ -58,6 +58,7 @@ constructor(
 
   }
 onDeleteUser(userId:number):void{
+  this.users$=this.usersService.deleterUser(userId)
 
   
 }

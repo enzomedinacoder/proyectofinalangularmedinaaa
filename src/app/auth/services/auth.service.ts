@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, map, of } from 'rxjs';
+import { BehaviorSubject, Observable, concat, concatMap, map, of } from 'rxjs';
 import { User } from 'src/app/dashboard/pages/users/models';
 import { environment } from 'src/environments/environment.local';
 import { LoginPayload } from '../models';
@@ -68,12 +68,13 @@ private handleAuthUser(authUser:User):void{
   }
 
   logOut():void{
-    this.store.dispatch(AuthActions.resetState())
+    this.store.dispatch(AuthActions.resetState()) 
     // this._authUser$.next(null);
     localStorage.removeItem('token');
     this.router.navigate(['/auth/login'])
 
   }
+
 
   
 }

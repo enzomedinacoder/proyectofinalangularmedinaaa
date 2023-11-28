@@ -7,6 +7,7 @@ import { UsersComponent } from "./users/users.component";
 import { UserDetailComponent } from "./users/components/user-detail/user-detail.component";
 import { DashboardComponent } from "../dashboard.component";
 import { UsersTableComponent } from "./users/components/users-table/users-table.component";
+import { adminGuard } from "src/app/core/guards/admin.guard";
 
 @NgModule ({
     imports:[
@@ -27,6 +28,7 @@ import { UsersTableComponent } from "./users/components/users-table/users-table.
                     },
                     {
                         path:'users',
+                        canActivate:[adminGuard],
                         loadChildren:()=>import('./users/users.module').then((m)=>m.UsersModule )
                     },
                     // {
