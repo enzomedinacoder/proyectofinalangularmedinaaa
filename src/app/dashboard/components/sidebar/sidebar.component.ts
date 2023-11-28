@@ -18,7 +18,7 @@ export class SidebarComponent {
   }
 
   get fullName$():Observable<string>{
-    return this.authUser$.pipe(map((user)=> `${user?.name} ${user?.lastName}`))
+    return this.authUser$.pipe(map((user)=>`${user?.name} ${user?.lastName}`))
   }
 
 
