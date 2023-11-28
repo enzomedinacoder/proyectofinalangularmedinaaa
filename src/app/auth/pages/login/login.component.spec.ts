@@ -2,7 +2,7 @@ import { TestBed } from "@angular/core/testing"
 import { LoginComponent } from "./login.component"
 import { SharedModule } from "src/app/shared/shared.module"
 import { HttpClientTestingModule } from "@angular/common/http/testing"
-import { AuthService } from "../../services/auth.service"
+import{provideMockStore,MockStore} from '@ngrx/store/testing'
 
 describe('LoginComponent',()=>{
 
@@ -14,7 +14,8 @@ describe('LoginComponent',()=>{
 
         TestBed.configureTestingModule({
             declarations:[LoginComponent],
-            imports:[HttpClientTestingModule,SharedModule]
+            imports:[HttpClientTestingModule,SharedModule],
+            providers:[provideMockStore({})]
 
         })
         loginComponent=TestBed.createComponent(LoginComponent).componentInstance
