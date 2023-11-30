@@ -32,8 +32,13 @@ routerLinkActive
 <mat-list-item>
   <a >Alumnos</a>
 </mat-list-item>
-<mat-list-item>
-  <a >Inscripciones</a>
+<mat-list-item   
+routerLink="enrollments"
+routerLinkActive 
+#enrollmentsLink="routerLinkActive"
+[activated]="enrollmentsLink.isActive"
+>
+<a >Inscripciones</a>
 </mat-list-item>
 <mat-list-item (click)="logOut()">
   <a >Cerrar Sesion</a>

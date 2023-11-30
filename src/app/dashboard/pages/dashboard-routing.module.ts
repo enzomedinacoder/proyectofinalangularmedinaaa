@@ -31,6 +31,10 @@ import { adminGuard } from "src/app/core/guards/admin.guard";
                         canActivate:[adminGuard],
                         loadChildren:()=>import('./users/users.module').then((m)=>m.UsersModule )
                     },
+                    {
+                        path:'enrollments',
+                        loadChildren:()=>import('./enrollments/enrollments.module').then((m)=>m.EnrollmentsModule)
+                    },
                     // {
                     //     path:'courses',
                     //     component:CoursesComponent

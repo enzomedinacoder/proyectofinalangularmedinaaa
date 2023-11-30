@@ -19,11 +19,54 @@
       "id": 2
     },
     {
-      "name": "sadasd",
-      "lastName": "editaasdsado",
-      "email": "sahgfddash@gmail.com",
-      "id": 3
+      
+        "name": "Rocio",
+        "lastName": "Farias",
+        "email": "farias@gmail.com",
+        "password": "123456",
+        "token": "asjdgsakjgdjahgsk",
+        "role": "STUDENT",
+        "id": 3
+      
+    },
+    {
+      
+      "name": "Juan",
+      "lastName": "Campos",
+      "email": "campos@gmail.com",
+      "password": "123456",
+      "token": "ajkfhlkahjflkjshafdalkfjh",
+      "role": "STUDENT",
+      "id": 4
+    
+  }   
+  ],
+  
+  "enrollments": [
+    {
+      "id":1,
+      "courseId":1,
+      "userId":3
+    },
+    {
+      "id":2,
+      "courseId":2,
+      "userId":4
     }
   ],
-  "courses": []
+
+
+
+"courses":[
+  {
+    "id":1,
+    "name":"Javascript"
+  },
+  {
+    "id":2,
+    "name":"Angular"
+  }
+
+]
+
 }
