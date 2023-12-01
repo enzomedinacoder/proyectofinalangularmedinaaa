@@ -1,5 +1,5 @@
 import { createActionGroup, emptyProps, props } from '@ngrx/store';
-import { Enrollment } from '../components/enrollments-table/models';
+import { CreateEnrollmentPayload, Enrollment } from '../components/enrollments-table/models';
 import { Course } from '../../courses/models';
 import { User } from '../../users/models';
 
@@ -11,6 +11,16 @@ export const EnrollmentActions = createActionGroup({
     'Load Enrollments Failure': props<{ error: unknown }>(),
     'Load Enrollment Dialog Options':emptyProps(),  
     'Load Enrollment Dialog Options Success':props<{courses:Course[];students:User[]}>(),  
+
+
     'Load Enrollment Dialog Options Failure':props<{error:unknown}>(),
-  }
+
+    'Create Enrollment':props<{payload:CreateEnrollmentPayload}>(),
+    // 'Create Enrollment Success':props<{payload:CreateEnrollmentPayload}>(),
+    'Create Enrollment Failure':props<{error:unknown}>(),
+
+
+
+
+  },
 });

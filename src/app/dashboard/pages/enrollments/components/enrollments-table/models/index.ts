@@ -8,3 +8,7 @@ export interface Enrollment{
     user?:User;
     course?:Course
 }
+export interface CreateEnrollmentPayload{
+    courseId:number|null;
+    userId:number|null;
+}

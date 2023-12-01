@@ -7,3 +7,16 @@ export const selectEnrollmentState = createFeatureSelector<fromEnrollment.State>
 );
 
 export const selectEnrollments=createSelector(selectEnrollmentState,(state)=>state.enrollments)
+
+
+export const selectCourseOptions =createSelector(
+  selectEnrollmentState,
+  (state) =>state.courseOptions
+)
+
+
+
+export const selectStudentOptions =createSelector(
+  selectEnrollmentState,
+  (state) =>state.studentsOptions
+)

@@ -1,12 +1,16 @@
 import { createFeature, createReducer, on } from '@ngrx/store';
 import { EnrollmentActions } from './enrollment.actions';
 import { Enrollment } from '../components/enrollments-table/models';
+import { Course } from '../../courses/models';
+import { User } from '../../users/models';
 
 export const enrollmentFeatureKey = 'enrollment';
 
 export interface State {
   isLoading:boolean;
   isLoadingDialogOptions:boolean;
+  courseOptions:Course[];
+  studentsOptions:User[];
   enrollments:Enrollment[];
   error:unknown
 
@@ -17,6 +21,8 @@ export const initialState: State = {
   isLoading:false,
   enrollments:[],
   error:null,
+  courseOptions:[],
+  studentsOptions:[],
   isLoadingDialogOptions:false,
 
 };
@@ -34,12 +40,33 @@ export const reducer = createReducer(
 
   on(EnrollmentActions.loadEnrollmentsFailure, (state, {error}) => ({...state,isLoading:false,error})),
 
-  on(EnrollmentActions.loadEnrollmentDialogOptions,(state)=>{
-    return{
-...state,
+
+    on(EnrollmentActions.loadEnrollmentDialogOptions,(state)=>{
+      return{
+      ...state,
     isLoadingDialogOptions:true,
-}
-  })
+      }
+    }),
+
+    on(EnrollmentActions.loadEnrollmentDialogOptionsSuccess,(state,action)=>({...state,
+      courseOptions:action.courses,
+      studentsOptions:action.students,
+      isLoadingDialogOptions:false, 
+
+    })),
+
+
+    on(EnrollmentActions.loadEnrollmentDialogOptionsFailure,(state,action)=>({...state,
+      error:action.error,
+      isLoadingDialogOptions:false, 
+
+    })),
+
+
+
+
+
+
 
   );
 

@@ -38,11 +38,14 @@ private handleAuthUser(authUser:User):void{
     .get<User[]>(`${environment.baseUrl}/users?email=${payload.email}&password=${payload.password}`)
     .subscribe({
       next:(response)=>{
-        if(!response.length){
-          alert('usuario o contraseña invalidos')
-        }else{
+        const authUser=response[0]
 
-          const authUser=response[0];
+        if(!authUser){
+          alert('usuario o contraseña invalidos')
+        }else if (authUser?.role==='STUDENT'){
+          alert('No tiene autorizacion para ingresar')
+        }
+        else{
           this.handleAuthUser(authUser)
           this.router.navigate(['/dashboard/home'])
         }
