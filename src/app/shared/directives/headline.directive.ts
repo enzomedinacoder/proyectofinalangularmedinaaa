@@ -30,11 +30,5 @@ private _fontWeight='normal'
   }
 
 
-//   ngOnChanges(changes: SimpleChanges): void {
-
-//     this.fontWeight =changes['fontWeight']?.currentValue;
-//     this.setFontWeight()
-
-//   }
 
 }

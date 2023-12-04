@@ -25,7 +25,6 @@ export class AuthService {
 
 private handleAuthUser(authUser:User):void{
   this.store.dispatch(AuthActions.setAuthUser({data:authUser}))
-  // this._authUser$.next(authUser)
   localStorage.setItem('token',authUser.token)
 }
 
@@ -72,7 +71,6 @@ private handleAuthUser(authUser:User):void{
 
   logOut():void{
     this.store.dispatch(AuthActions.resetState()) 
-    // this._authUser$.next(null);
     localStorage.removeItem('token');
     this.router.navigate(['/auth/login'])
 

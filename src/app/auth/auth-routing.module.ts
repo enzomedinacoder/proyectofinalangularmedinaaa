@@ -2,6 +2,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { LoginModule } from './pages/login/login.module';
 import { AuthComponent } from './auth.component';
+import { LoginComponent } from './pages/login/login.component';
 
 
 const routes: Routes = [
@@ -20,7 +21,7 @@ const routes: Routes = [
     
     {
         path:'**',
-        redirectTo:'login'
+        redirectTo:'/auth/login'
 
     }
 ];

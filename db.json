@@ -140,6 +140,11 @@
       "courseId": 1,
       "userId": 4,
       "id": 8
+    },
+    {
+      "courseId": 2,
+      "userId": 5,
+      "id": 9
     }
   ],
   "courses": [

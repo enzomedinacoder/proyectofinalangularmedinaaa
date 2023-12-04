@@ -4,9 +4,6 @@ import { EnrollmentActions } from './store/enrollment.actions';
 import { MatDialog } from '@angular/material/dialog';
 import { EnrollmentDialogComponent } from './components/enrollment-dialog/enrollment-dialog.component';
 import { selectCourseOptions, selectStudentOptions } from './store/enrollment.selectors';
-import { Observable } from 'rxjs';
-import { Course } from '../courses/models';
-import { User } from '../users/models';
 
 @Component({
   selector: 'app-enrollments',

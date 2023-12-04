@@ -35,22 +35,6 @@ import { adminGuard } from "src/app/core/guards/admin.guard";
                         path:'enrollments',
                         loadChildren:()=>import('./enrollments/enrollments.module').then((m)=>m.EnrollmentsModule)
                     },
-                    // {
-                    //     path:'courses',
-                    //     component:CoursesComponent
-                    //     },
-                    // {
-                    //     path: 'courses/:id',
-                    //     component: CourseDetailComponent,
-                    // },
-                    // {
-                    // path:'users',
-                    // component:UsersComponent,
-                    // },
-                    // {
-                    // path:'users/detail/:id',
-                    // component:UserDetailComponent
-                    // },
 
                     {
                     path:'**',
