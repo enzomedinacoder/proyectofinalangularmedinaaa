@@ -10,27 +10,24 @@ mode="side">
 <app-sidebar></app-sidebar>
 
 </mat-drawer>
-<!-- Contenido -->
+
     <div class="example-sidenav-content">
-        <!-- toolbar -->
+
         <app-toolbar (toggleSidebar)="showSidebar=!showSidebar"></app-toolbar>
         
-        <!-- Pagina -->
+
         <main style="padding:1rem ">
             
             
-        <!-- <app-formpages></app-formpages> -->
-        <!-- <app-users></app-users> -->
+
         <router-outlet></router-outlet>
         
-        <!-- <button (click)="showHome=!showHome">Mostrar Home</button> -->
-        <!-- <app-home *ngIf="showHome"></app-home> -->
 
         </main>
         
 
     </div>
-    <!-- contenido -->
+
 
 
 

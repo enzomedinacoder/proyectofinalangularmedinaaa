@@ -35,6 +35,69 @@
       "token": "ajkfhlkahjflkjshafdalkfjh",
       "role": "STUDENT",
       "id": 4
+    },
+    {
+      "name": "Kevin",
+      "lastName": "Fernandez",
+      "email": "kf@gmail.com",
+      "password": "123456",
+      "token": "kjadhgfjgfkjagfkjasgf",
+      "role": "STUDENT",
+      "id": 5
+    },
+    {
+      "name": "Ignacio",
+      "lastName": "Cordero",
+      "email": "ignacioc@gmail.com",
+      "password": "123456",
+      "token": "ajhgfkjagfgafguyafg",
+      "role": "STUDENT",
+      "id": 6
+    },
+    {
+      "name": "Franco",
+      "lastName": "Farias",
+      "email": "franco@gmail.com",
+      "password": "123456",
+      "token": "ajkfhgshgksfjhglksd",
+      "role": "STUDENT",
+      "id": 7
+    },
+    {
+      "name": "Gisele",
+      "lastName": "Medina",
+      "email": "gisele@gmail.com",
+      "password": "123456",
+      "token": "asdkukfasdkjhfiuashfjklah",
+      "role": "STUDENT",
+      "id": 8
+    },
+    {
+      "name": "Manuel",
+      "lastName": "Medina",
+      "email": "manuel@gmail.com",
+      "password": "123456",
+      "token": "akjhdfsgaks",
+      "role": "STUDENT",
+      "id": 9
+    },
+    {
+      "name": "Cynthia",
+      "lastName": "Medina",
+      "email": "cynthia@gmail.com",
+      "password": "123456",
+      "token": "asdkukfasdkjhfiuashfjklah",
+      "role": "STUDENT",
+      "id": 10
+    },
+    {
+      "name": "Isabella",
+      "lastName": "Medina",
+      "email": "isabellam@gmail.com",
+      "password": "123456",
+      "token": "asddsfjhsdfkukfasdkjhfiuashfjklah",
+      "role": "STUDENT",
+      "id": 11
     }
   ],
   "enrollments": [
@@ -52,6 +115,31 @@
       "courseId": 1,
       "userId": 4,
       "id": 3
+    },
+    {
+      "courseId": 2,
+      "userId": 3,
+      "id": 4
+    },
+    {
+      "courseId": 2,
+      "userId": 9,
+      "id": 5
+    },
+    {
+      "courseId": 8,
+      "userId": 9,
+      "id": 6
+    },
+    {
+      "courseId": 8,
+      "userId": 10,
+      "id": 7
+    },
+    {
+      "courseId": 1,
+      "userId": 4,
+      "id": 8
     }
   ],
   "courses": [
@@ -62,6 +150,38 @@
     {
       "id": 2,
       "name": "Angular"
+    },
+    {
+      "id": 3,
+      "name": "Desarrollo Web"
+    },
+    {
+      "id": 4,
+      "name": "Typescript"
+    },
+    {
+      "id": 5,
+      "name": "React Js"
+    },
+    {
+      "id": 6,
+      "name": "Node Js"
+    },
+    {
+      "id": 7,
+      "name": "Diseño UX/UI"
+    },
+    {
+      "id": 8,
+      "name": "SQL"
+    },
+    {
+      "id": 9,
+      "name": "C"
+    },
+    {
+      "id": 10,
+      "name": "C++"
     }
   ]
 }
